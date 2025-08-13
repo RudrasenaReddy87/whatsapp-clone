@@ -1,0 +1,93 @@
+.chat-tile {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 68px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 10px;
+  margin: 4px 8px;
+}
+
+.chat-tile:hover {
+  background-color: #f0f2f5;
+}
+
+.chat-tile.active {
+  background-color: #e9edef;
+}
+
+.chat-tile-avatar {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chat-tile-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border-top: 1px solid #f0f2f5;
+  padding-right: 15px;
+  overflow: hidden;
+}
+
+.chat-tile:first-child .chat-tile-details {
+  border-top: none;
+}
+
+.chat-tile-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #111b21;
+  font-weight: 400;
+}
+
+.chat-tile-title > :first-child {
+  font-weight: 500;
+}
+
+.chat-tile-title > :nth-child(2) {
+  font-size: 12px;
+  color: #667781;
+}
+
+.chat-tile-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+  font-size: 14px;
+  color: #667781;
+}
+
+.chat-tile-subtitle > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.unread-badge {
+  background: #25d366;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 2px 6px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.chat-tile.active .chat-tile-title > :first-child {
+  font-weight: 600;
+}
+
+.chat-tile.active .chat-tile-subtitle {
+  color: #111b21;
+}
