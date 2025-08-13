@@ -22,12 +22,10 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const backendUrl = process.env.REACT_APP_BACKEND_URL || "";
-
   useEffect(() => {
     setLoadingChats(true);
     setErrorChats(null);
-    fetch(`${backendUrl}/webhook/conversations`)
+    fetch("/webhook/conversations")
       .then(async (res) => {
         if (!res.ok) throw new Error("Failed to fetch chats");
         return await res.json();
@@ -47,7 +45,7 @@ function App() {
     if (selectedId) {
       setLoadingMessages(true);
       setErrorMessages(null);
-      fetch(`${backendUrl}/webhook/messages/${selectedId}`)
+      fetch(`/webhook/messages/${selectedId}`)
         .then(async (res) => {
           if (!res.ok) throw new Error("Failed to fetch messages");
           return await res.json();
@@ -76,7 +74,7 @@ function App() {
     setMessages((prev) => [...prev, newMessage]);
 
     try {
-      const response = await fetch(`${backendUrl}/webhook/messages`, {
+      const response = await fetch("/webhook/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newMessage),
