@@ -1,12 +1,10 @@
 {
-  "name": "whatsapp-clone-root",
+  "name": "whatsapp-clone-monorepo",
   "version": "1.0.0",
-  "description": "Root package for WhatsApp clone monorepo",
+  "description": "Monorepo for WhatsApp Clone",
   "scripts": {
-    "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "cd frontend && npm install --production=false && npm run build",
-    "build:backend": "cd backend && npm install",
-    "start": "node backend/src/server.js"
+    "start": "node backend/src/server.js",
+    "postinstall": "npm install --prefix frontend --production=false && npm run build --prefix frontend && npm install --prefix backend"
   },
   "engines": {
     "node": "22.x"
