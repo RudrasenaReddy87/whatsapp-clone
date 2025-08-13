@@ -1,30 +1,11 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "options": {
-        "installCommand": "npm install",
-        "buildCommand": "npm run build"
-      }
-    },
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node",
-      "options": {
-        "installCommand": "npm install --prefix backend"
-      }
-    }
+    { "src": "backend/src/app.js", "use": "@vercel/node" },
+    { "src": "package.json", "use": "@vercel/static-build" }
   ],
   "routes": [
-    {
-      "src": "/webhook/(.*)",
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/$1"
-    }
+    { "src": "/webhook/(.*)", "dest": "/backend/src/app.js" },
+    { "src": "/(.*)", "dest": "/frontend/$1" }
   ]
 }
