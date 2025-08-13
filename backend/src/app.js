@@ -15,6 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
+app.get("/health", (req, res) => res.status(200).json({ status: "ok" }));
 app.use("/webhook", webhookRoutes);
 
 // Serve frontend in production
