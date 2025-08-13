@@ -1,6 +1,8 @@
 # WhatsApp Web Clone
 
 A full-stack WhatsApp Web clone built with React and Node.js.
+<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/429019f8-52fb-435f-81b3-39e852d0404e" />
+
 
 ## Project Structure
 
