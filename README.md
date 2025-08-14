@@ -6,11 +6,6 @@
     <img src="https://img.shields.io/badge/Live_App-WhatsApp_Clone-brightgreen?style=flat-square&logo=vercel&logoColor=white" alt="WhatsApp Clone" />
   </a>
 
-  <!-- GitHub Repository -->
-  <a href="https://github.com/RudrasenaReddy87/Weather-forecasting-app" target="_blank">
-    <img src="https://img.shields.io/badge/Repository-Weather_App-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo" />
-  </a>
-
   <!-- GitHub Profile -->
   <a href="https://github.com/RudrasenaReddy87" target="_blank">
     <img src="https://img.shields.io/badge/Profile-RudrasenaReddy87-333?style=flat-square&logo=github&logoColor=white" alt="GitHub Profile" />
@@ -29,9 +24,9 @@
   <a href="mailto:b.rudrasenareddy@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-b.rudrasenareddy@gmail.com-d14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
-A full-stack WhatsApp Web clone built with React and Node.js.
 <img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/429019f8-52fb-435f-81b3-39e852d0404e" />
 
+A full-stack WhatsApp Web clone built with React and Node.js.
 
 ## Project Structure
 
