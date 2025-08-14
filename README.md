@@ -25,8 +25,31 @@
     <img src="https://img.shields.io/badge/Email-b.rudrasenareddy@gmail.com-d14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
 
-A full-stack WhatsApp Web clone built with React and Node.js.
+## WhatsApp Web Clone
 
+A full-stack WhatsApp Web clone built with **React** and **Node.js**, featuring real-time messaging and modern UI/UX.
+
+### 🚀 Key Features
+- **Real-time messaging** powered by **Socket.IO**
+- **User authentication** with JWT & password encryption
+- **MongoDB** for efficient data storage
+- **Responsive design** for all devices
+- **Cloud deployment** on Render for scalability
+
+### 🛠 Tech Stack
+| Frontend         | Backend        | Database  | Deployment |
+|------------------|----------------|-----------|------------|
+| React.js         | Node.js        | MongoDB   | Render     |
+| Material-UI      | Express.js     |           |            |
+| Socket.IO Client | Socket.IO Server |          |            |
+
+### 🔗 Live Demo
+👉 [Try it now!](https://whatsapp-clone-1-7uzd.onrender.com/)
+
+### 📂 Repository
+[GitHub Repo](https://github.com/RudrasenaReddy87/WhatsApp-Clone)
+
+> Fully functional WhatsApp-like experience with modern web technologies
 <img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/429019f8-52fb-435f-81b3-39e852d0404e" />
 
 
