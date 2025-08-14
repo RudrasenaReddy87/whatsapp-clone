@@ -1,10 +1,6 @@
 # WhatsApp Web Clone
 <p align="left">
 
-<!-- Live App -->
-  <a href="https://weather-forecasting-app-7m71.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/Live_App-Weather_App-brightgreen?style=flat-square&logo=vercel&logoColor=white" alt="Weather App" />
-  </a>
   
   <a href="https://whatsapp-clone-1-7uzd.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/Live_App-WhatsApp_Clone-brightgreen?style=flat-square&logo=vercel&logoColor=white" alt="WhatsApp Clone" />
